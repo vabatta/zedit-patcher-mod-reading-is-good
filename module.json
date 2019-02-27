@@ -1,0 +1,14 @@
+{
+  "id": "ModReadingIsGood2",
+  "name": "Reading is Good 2 patcher",
+  "author": "vabatta",
+  "version": "1.0.0",
+  "released": "1/25/2019",
+  "updated": "2/27/2019",
+  "description": "Patcher to dynamically add skill books to Reading is Good 2 mod formlists.",
+  "requires": [
+    "unifiedPatchingFramework"
+  ],
+  "moduleLoader": "UPF",
+  "canHotLoad": true
+}
