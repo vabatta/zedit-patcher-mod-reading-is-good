@@ -1,12 +1,13 @@
 {
-  "name": "zedit-patcher-mod-reading-is-good-2",
-  "description": "Patcher to dynamically add skill books to Reading is Good 2 mod formlists.",
+  "name": "zedit-patcher-mod-reading-is-good",
+  "description": "Patcher to dynamically add skill books to Reading is Good mod formlists.",
   "version": "1.0.0",
   "author": "vabatta",
-  "repository": "https://github.com/vabatta/zedit-patcher-mod-reading-is-good-2.git",
+  "repository": "https://github.com/vabatta/zedit-patcher-mod-reading-is-good.git",
   "private": true,
   "license": "GPL-3.0-only",
   "scripts": {
+    "release": "npx gulp release",
     "update": "npx gulp update",
     "pack": "npx gulp pack"
   },
