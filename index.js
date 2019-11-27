@@ -9,7 +9,7 @@ registerPatcher({
     templateUrl: `${patcherUrl}/partials/settings.html`,
     defaultSettings: {
       title: info.name,
-      patchFileName: 'Reading is Good - Patch.esp'
+      patchFileName: 'zPatch.esp'
     }
   },
   requiredFiles: [ 'Reading Is Good 2.esp' ],
