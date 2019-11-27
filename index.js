@@ -12,7 +12,7 @@ registerPatcher({
       patchFileName: 'Reading is Good - Patch.esp'
     }
   },
-  requiredFiles: [ 'Reading Is Good 2.esp' ],
+  requiredFiles: [xelib.GetGlobal('AppName') === 'TES5' ? 'Reading Is Good 2.esp' : 'ReadingIsGood.esp'],
   getFilesToPatch: filenames => {
     return filenames
   },
@@ -22,7 +22,7 @@ registerPatcher({
       // measure the execution time
       locals.start = new Date()
       // get the base mod file
-      const ris = xelib.FileByName('Reading Is Good 2.esp')
+      const ris = xelib.FileByName(xelib.GetGlobal('AppName') === 'TES5' ? 'Reading Is Good 2.esp' : 'ReadingIsGood.esp')
       // locally save the lists
       locals.lists = []
       locals.lists[0] = xelib.CopyElement(xelib.GetElement(ris, '_RIG_SkillBookList_OneHanded'), patchFile, false) // sSBList1HD
